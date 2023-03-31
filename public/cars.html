@@ -70,9 +70,46 @@
 
     <!-- cari mobil -->
     <section class="cari-mobil position-absolute w-100">
-        <div class="container-cm shadow mx-auto rounded-1">
-            <label>Tipe Driver</label>
-            <h1>asdas</h1>
+        <div class="row container-cm shadow mx-auto rounded-3">
+          <div class="col-2 my-auto ms-3">
+            <form action="#">
+                <labelc class="jdl">Tipe Driver</labelc> <br>
+                <select name="driver" id="tipeDriver">
+                  <option value="jdl">Pilih Tipe Driver</option>
+                  <option value="sopir">Dengan Sopir</option>
+                  <option value="tdkSopir">Tanpa Sopir(lepas kunci)</option>
+                  <label for="">Tanggal</label>
+                </select>
+              </form>        
+            </div>
+            <div class="col-2 my-auto ms-5">
+              <form action="#">
+                <label for="" class="jdl">Tanggal</label> <br>
+                <input type="date" name="" id="tanggal">
+              </form>
+            </div>
+            <div class="col-2 my-auto">
+              <form action="#">
+                <label for="" class="jdl ms-4">Waktu Jemput/Ambil</label> <br>
+                <select name="waktu" id="waktu" class="ms-5">
+                  <option value="">Pilih Waktu</option>
+                  <option value="">08.00 WIB</option>
+                  <option value="">09.00 WIB</option>
+                  <option value="">10.00 WIB</option>
+                  <option value="">11.00 WIB</option>
+                  <option value="">12.00 WIB</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-3 my-auto">
+              <form action="#">
+                <label for="" class="jdl-penumpang">Jumlah Penumpang (optional)</label> <br>
+                <input type="number" name="penumpang" id="penumpang" placeholder="Jumlah Penumpang">
+              </form>
+            </div>
+            <div class="col-2 my-auto">
+              <button class="button-primary-cm fw-bold rounded-1">Cari Mobil</button>
+            </div>
         </div>
     </section>
     <!-- cari mobil end -->
@@ -104,6 +141,5 @@
       </div>
     </section>
     <!-- Footer End -->
-
   </body>
 </html>

@@ -141,3 +141,44 @@ h3 {
     margin-top: -50px;
     background-color: #fff;
 } 
+
+.button-primary-cm {
+    background-color: #5CB85F;
+    border: none;
+    color: white;
+    width: 92px;
+    height: 36px;
+    margin-left: 70px;
+    margin-top: 15%;
+}
+
+.jdl, .jdl-penumpang{
+    color: #3C3C3C;
+    font-size: 12px;
+}
+
+input[type="date"] {
+    height: 36px;
+    width: 210.75px;
+}
+
+#tipeDriver {
+    height: 36px;
+    width: 210.75px;
+    border: 1px black solid;
+}
+
+#waktu {
+    height: 36px;
+    width: 210.75px;
+}
+
+input[type="number"] {
+    height: 36px;
+    width: 210.75px;
+    margin-left: 95px;
+} 
+
+.jdl-penumpang {
+    margin-left: 70px;
+}
