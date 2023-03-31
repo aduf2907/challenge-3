@@ -78,14 +78,15 @@
                   <option value="jdl">Pilih Tipe Driver</option>
                   <option value="sopir">Dengan Sopir</option>
                   <option value="tdkSopir">Tanpa Sopir(lepas kunci)</option>
-                  <label for="">Tanggal</label>
                 </select>
               </form>        
             </div>
             <div class="col-2 my-auto ms-5">
               <form action="#">
                 <label for="" class="jdl">Tanggal</label> <br>
-                <input type="date" id="tanggal" name="tanggal">
+                <div id="datepicker">
+                  <input type="date" id="tanggal" name="tanggal">
+                </div>
               </form>
             </div>
             <div class="col-2 my-auto">
@@ -114,6 +115,14 @@
     </section>
     <!-- cari mobil end -->
 
+    <!-- hasilnya -->
+    <section class="hasil">
+      <div class="gaAdaHasil"></div>
+      <div class="container">
+        <div class="dataMobil cars-container"></div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <section class="footer">
       <div class="container">
@@ -141,6 +150,12 @@
       </div>
     </section>
     <!-- Footer End -->
+    <script>
+      $('.datepicker').datepicker({
+        format: 'mm/dd/yyyy',
+        startDate: '-3d'
+      });
+    </script>
     <script src="../server/index.js"></script>
     <script src="scripts/car.example.js"></script>
   </body>

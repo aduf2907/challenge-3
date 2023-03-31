@@ -157,10 +157,11 @@ h3 {
     font-size: 12px;
 }
 
-input[type="date"] {
+/*  kalo dinyalain negebug gambar kalendernya)): */
+    input[type="date"] {
     height: 36px;
     width: 210.75px;
-}
+} 
 
 #tipeDriver {
     height: 36px;

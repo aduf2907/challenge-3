@@ -1,5 +1,6 @@
 class App {
   constructor() {
+    this.tanggal;
     this.clearButton = document.getElementById("clear-btn");
     this.loadButton = document.getElementById("load-btn");
     this.carContainerElement = document.getElementById("cars-container");
